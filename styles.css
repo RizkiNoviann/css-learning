@@ -1,0 +1,16 @@
+h1{
+    color: aqua;
+    font-family: 'Times New Roman';
+    padding-left: 300px;
+    padding-right: 50px;
+}
+
+p{
+    color: blue;
+    font-family: Arial;
+}
+
+b{
+    color: yellow;
+    background-color: brown;
+}

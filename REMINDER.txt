@@ -1,0 +1,82 @@
+video 2
+inline css
+menambahkan atribut style di dalam selector nya, misal h1
+<h1>aaa</h1> tambahkan style
+<h1 style="">aaa</h1>
+
+video 3
+internal css
+menambahkan atribut style di bagian head panggil sesuai
+selector nya contoh h1
+
+h1{
+   color:blue	
+   }
+
+video 4
+eksternal css
+membuat style di beda file atau folder, tambahkan tag
+<link 
+
+video 5
+selector
+
+video 8
+inheritence
+menggunakan "inherit" untuk menggunakan style pada parent yg dituju
+contoh
+padding:inherit;
+
+video 9
+color
+-color name, langsung memasukan nama warnanya
+-hex color, menggunakan # dan bisa merubah warna sesuka hati
+-rgb(a) value, rgba mempunyai nilai maksimal 255, rentang a 0-1
+	    alpha, jelas tidak nya warna (burem)
+-hsl(a), hue, saturation,lightness
+	contoh
+	color:rgb(255,255,255) akan menjadi warna putih
+	color:rgb(255,0,0) akan menjadi merah
+	color:rgb(0,0,255) akan menjadi biru
+
+video 12-13
+Text
+
+-font family, mengganti font (jika ada 3 pilihan artinya jika tidak ada ini
+jadi itu)
+-font size, ukuran font bisa menggunakan px,%,em(mengikuti ukuran font aslinya
+-font weight, membuat bold
+-font style, membuat italic
+-text decoration, membuat underline, none(mengilangkan style teks)
+-teks transform, contoh capitalize, membuat smua huruf awal jadi kapital
+-teks align, meratakan huruf
+-teks shadow, membuat teks berbayang (1px 2px 3px)bisa menambahkan warna 
+				   kanan bawah ketebalan
+-word dan letter spacing, jarak teks dan huruf biasanya menggunakan em
+-hover, aksi saat terkena mouse
+-active, aksi saat di klik
+-visited, aksi saat selesai dilakukan aksinya
+
+video 14
+div dan overflow
+
+overflow scroll bikin div nya ada bar scroll
+overflow hidden bikin div nya disembunyikan
+
+video 16
+border
+
+untuk keseluruhan contoh
+border: 2px solid red
+gunakan width untuk mengatur lebar nya
+bisa diatur atas bawah kanan kiri
+solid, bentuk biasa
+dotted, titik2
+dashed, 2 garis
+mengatur ukuran
+
+border-width: 20px (keseluruhan)
+border-width: 20px         10 px
+	      atas bawah   kiri kanan
+border-width: 20px 30px   40px   50px
+	      atas kanan  bawah  kiri

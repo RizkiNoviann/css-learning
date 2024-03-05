@@ -1,0 +1,26 @@
+/* universal selector */
+*{
+    font-family: Arial;
+    padding-right: 50px;
+}
+
+/* type selector */
+
+h1{
+    color: violet;
+}
+
+p{
+    color: blue;
+    
+}
+
+/* class selector */
+li.sport1{
+    background-color: blueviolet;
+}
+
+/* id selector */
+#sport2{
+    background-color: chartreuse;
+}
