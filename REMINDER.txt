@@ -80,3 +80,93 @@ border-width: 20px         10 px
 	      atas bawah   kiri kanan
 border-width: 20px 30px   40px   50px
 	      atas kanan  bawah  kiri
+
+
+----Dicoding Grid----
+
+
+grid line memiliki2 jenis
+
+row grid line mulai dari atas ke bawah
+column grid line mulai dari kiri ke kanan
+
+grid track adalah ruang yang terbentuk dari dua buah grid line yang bersebelahan
+
+grid cell dalah pertemuan antara satu row grid track dan satu column grid track
+
+Grid area dapat diterapkan sebagai gabungan antara dua atau lebih grid cell yang saling berdekatan
+
+contoh mengatur ukuran grid item (4 item), grid-template-columns, dan grid-template-row
+  grid-template-columns: 5em 	 100px;
+			item1,2  item3,4
+  grid-template-columns: 5em 	 100px  20px  90em;
+			 item1    item2  item3  item4
+
+gunakan grid-auto-rows grid-auto-column untuk mengatur semua item
+  grid-auto-rows: 150px 200px; semua row akan sama semua
+		  row1  row2
+
+satuan istimewa menggunakan fr
+grid-template-columns: 1fr 2fr;
+
+notasi minmax
+cocok digunakan dengan satuan fr
+  grid-template-columns: minmax(100px, 1fr) 250px 25%;
+ukuran paling kecil senilai 100 piksel dan paling besar senilai 1 fraction
+
+notasi repeat untuk menetapkan jumlah kolom
+contoh dengan menggunakan 5 item
+  grid-template-columns: repeat(3, 1fr); --> hasil nya  1,2,3
+							4,5
+
+membuat website responsive tanpa media query menggunakan grid
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+
+mengatur posisi di grid
+contoh penggunaan
+  grid-row-start: 2; /* dimulai dari garis baris ke-2 */
+  grid-row-end: 4; /* diakhiri sampai garis baris ke-4 */
+  grid-column-start: 2; /* dimulai dari garis kolom ke-2 */
+  grid-column-end: 4; /* diakhiri sampai garis baris ke-4 */
+
+Untuk memulai pembentukan susunan halaman web, kita perlu menamai grid items menggunakan properti grid-area.
+contoh
+footer {
+  grid-area: footer;
+}
+
+gunakan properti grid-template-areas untuk mendefinisikan posisi yang akan ditempati oleh grid items.
+contoh
+  grid-template-areas:
+    'header  header  header  header'
+    'content content content sidebar'
+    'footer  footer  footer  footer';
+}
+gunakan titik jika ingin mengosongkan satu grid cell
+contoh
+  grid-template-areas:
+    'header  header  header  header'
+    'content content content sidebar'
+    'footer  footer  footer  .......';
+}
+
+
+membuat jadi responsif, ubah susunan area nya
+contoh
+@media (max-width: 400px) {
+  .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 5fr 2fr 2fr;
+    grid-template-areas:
+      'header'
+      'content'
+      'sidebar'
+      'footer';
+  }
+}
+
+justify items
+
+
+
+
